@@ -1,0 +1,35 @@
+{
+  "name": "codebase",
+  "version": "2.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "frontend",
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@swc/core": "^1.2.110",
+    "@swc/jest": "^0.2.5",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.9.6",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.4.1",
+    "start-server-and-test": "^1.14.0",
+    "swc-loader": "^0.1.15",
+    "typescript": "^4.4.3",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
+  }
+}

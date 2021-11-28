@@ -1,0 +1,33 @@
+{
+  "name": "frontend",
+  "version": "2.0.0",
+  "scripts": {
+    "clean": "rm -rf .next",
+    "dev": "yarn clean && next dev -p 3010",
+    "build": "yarn clean && next build",
+    "start": "next start",
+    "build-start": "yarn build && next start -p 3010",
+    "export": "npm run build && next export",
+    "lint": "next lint",
+    "e2e": "npx playwright test --browser=chromium"
+  },
+  "dependencies": {
+    "@codebase/interface": "*",
+    "@heroicons/react": "^1.0.5",
+    "@playwright/test": "^1.16.3",
+    "autoprefixer": "^10.4.0",
+    "jotai": "^1.4.3",
+    "next": "12.0.3",
+    "postcss": "^8.3.11",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.7",
+    "@types/react": "17.0.34",
+    "eslint": "7",
+    "eslint-config-next": "12.0.3",
+    "typescript": "4.4.4"
+  }
+}

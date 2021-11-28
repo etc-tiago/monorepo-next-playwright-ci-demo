@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["ES2019", "dom"],
+    "target": "ES2019",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": false
+  },
+  "exclude": [
+    "tests",
+    "node_modules",
+    "*/node_modules/*",
+    "**/node_modules/**",
+    "*.js",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}

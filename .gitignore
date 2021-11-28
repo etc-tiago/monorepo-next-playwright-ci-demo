@@ -1,0 +1,17 @@
+node_modules/
+.nyc_output/
+coverage
+dist
+build
+tmp
+__snapshots__
+.vscode/*
+!.vscode/settings.json
+yarn-error.log
+*/yarn-error.log
+.env
+.cache
+.next
+services/sqs/*
+services/dynamo/*
+services/s3/*
