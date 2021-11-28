@@ -24,18 +24,6 @@ jobs:
       - run: yarn workspace frontend e2e
 
       - uses: actions/upload-artifact@v2
-        if: ${{ failure() }}
         with:
-          name: frontend-registro-test-results
-          path: ./frontend/registro/test-results
-
-      - uses: actions/upload-artifact@v2
-        if: ${{ failure() }}
-        with:
-          name: frontend-painel-test-results
-          path: ./frontend/painel/test-results
-
-      - run: yarn stop:pm2
-        if: always()
-        env:
-          NODE_ENV: production
+          name: painel-test-results
+          path: ./frontend/test-results
